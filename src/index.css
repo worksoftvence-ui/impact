@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  --color-ink: #0B1F3A;
+  --color-impact-red: #E4202C;
+  --color-control-blue: #1F4E9E;
+  --color-energy-green: #4BA82E;
+  --color-warm-cream: #F6F4EE;
+  --color-mist-blue: #EAF0F7;
+  --color-slate-body: #4A5A70;
+  --color-line-border: #DCE3EC;
+  --color-night: #08162B;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F6F4EE;
+  color: #0B1F3A;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Fluid responsive clamp typography utilities */
+.type-h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.type-h2 {
+  font-size: clamp(2rem, 3.5vw, 3.25rem);
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.type-h3 {
+  font-size: clamp(1.625rem, 2.5vw, 2.5rem);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.type-h4 {
+  font-size: clamp(1.375rem, 2vw, 1.875rem);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.type-h5 {
+  font-size: clamp(1.125rem, 1.5vw, 1.375rem);
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.type-p1 {
+  font-size: clamp(1.0625rem, 1.3vw, 1.25rem);
+  line-height: 1.6;
+}
+
+.type-p2 {
+  font-size: clamp(1rem, 1.1vw, 1.0625rem);
+  line-height: 1.6;
+}
+
+.type-p3 {
+  font-size: clamp(0.8125rem, 1vw, 0.875rem);
+  line-height: 1.5;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F6F4EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}

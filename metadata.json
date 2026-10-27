@@ -1,0 +1,6 @@
+{
+  "name": "Impact Control Systems",
+  "description": "UK Building Energy Management Systems (BEMS) specialists. Turnkey design, installation, maintenance, remote graphics hosting, and energy optimisation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
